@@ -1,0 +1,15 @@
+def searchrec():
+    #order_no=OrderNo.get()
+    con=db.connect(host="localhost",user="root",password="",database="bmr")
+    cur=con.cursor()
+    #a=str(input("Enter order_id to search :"))
+    s="SELECT * FROM `sold_product` WHERE order_id='"+order.get() or phone.get()+"'"
+    #s="select * from student_a where rno='"+str(s)+"'"
+    cur.execute(s)
+    data=cur.fetchall()
+    if data:
+        res_lb.config(text=(data))
+    else:
+        print("No such record found")
+    cur.close()
+    con.close()
