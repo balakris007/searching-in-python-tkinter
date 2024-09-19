@@ -1,0 +1,22 @@
+#LABEL FRAME
+#-------------------------------------------------------------
+label_frame=Frame(root,width=1000,height=1300,bg='white')
+label_frame.place(x=0,y=0)
+
+entry_frame =Frame(root,width=0,height=0)
+entry_frame.place(x=0,y=0)
+
+#LABEL CREATE
+#---------------------------------------------------------------------
+order_lb = tk.Label(label_frame, text='Orderno',  fg='black',
+                       font=('Bold', 20))
+
+order_lb.place(x=17,y=10)
+
+phone_lb = tk.Label(label_frame,text='PhoneNumber',fg='black',
+                    font=('Bold',20))
+phone_lb.place(x=498,y=10)
+
+res_lb = tk.Label(label_frame,text='result',fg='black',bg='#8de6f2',
+                    font=('Bold',20))
+res_lb.place(x=498,y=100)
