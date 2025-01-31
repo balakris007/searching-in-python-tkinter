@@ -1,3 +1,1 @@
-install any python IDLE,
-copy it,
-save and run
+run on any python IDLE
